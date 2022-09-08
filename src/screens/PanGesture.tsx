@@ -1,5 +1,5 @@
 import React, {useEffect} from 'react';
-import {StyleSheet, View} from 'react-native';
+import {Dimensions, StyleSheet, View} from 'react-native';
 import {
   GestureHandlerRootView,
   PanGestureHandler,
@@ -39,6 +39,7 @@ export default function PanGesture() {
       translateY.value = event.translationY + context.translateY;
     },
     onEnd: () => {
+      console.log('Ended');
       const distance = Math.sqrt(translateX.value ** 2 + translateY.value ** 2);
       if (distance < RADIUS + SIZE / 2) {
         (translateX.value = withSpring(0)), (translateY.value = withSpring(0));

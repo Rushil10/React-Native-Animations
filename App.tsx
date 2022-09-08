@@ -16,6 +16,9 @@ import AllAnimations from './src/screens/AllAnimations';
 import PanGesture from './src/screens/PanGesture';
 import InterpolateScollView from './src/screens/InterpolateScollView';
 import InterpolateColors from './src/screens/InterpolateColors';
+import ImageZoom from './src/screens/ImageZoom';
+import InstagramLike from './src/screens/InstagramLike';
+import FacebookLike from './src/screens/FacebookLikeAnimation';
 const Stack = createNativeStackNavigator();
 
 const App = () => {
@@ -44,6 +47,21 @@ const App = () => {
         <Stack.Screen
           name="InterpolateColor"
           component={InterpolateColors}
+          options={{animation: 'slide_from_left'}}
+        />
+        <Stack.Screen
+          name="ImageZoom"
+          component={ImageZoom}
+          options={{animation: 'slide_from_right'}}
+        />
+        <Stack.Screen
+          name="InstagramLike"
+          component={InstagramLike}
+          options={{animation: 'slide_from_left'}}
+        />
+        <Stack.Screen
+          name="FacebookLike"
+          component={FacebookLike}
           options={{animation: 'slide_from_left'}}
         />
       </Stack.Navigator>

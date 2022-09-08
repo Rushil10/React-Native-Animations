@@ -26,6 +26,18 @@ const AllAnimations = () => {
           title="Interpolate Color"
           onPress={() => navigation.push('InterpolateColor')}
         />
+        <ScreenButton
+          title="ImageZoom"
+          onPress={() => navigation.push('ImageZoom')}
+        />
+        <ScreenButton
+          title="InstagramLike"
+          onPress={() => navigation.push('InstagramLike')}
+        />
+        <ScreenButton
+          title="FacebookLike"
+          onPress={() => navigation.push('FacebookLike')}
+        />
       </ScrollView>
     </SafeAreaView>
   );

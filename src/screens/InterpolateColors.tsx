@@ -1,11 +1,9 @@
 import React, {useState} from 'react';
-import {Dimensions, StyleSheet, Switch, Text, View} from 'react-native';
+import {Dimensions, StyleSheet, Switch} from 'react-native';
 import Animated, {
-  interpolate,
   interpolateColor,
   useAnimatedStyle,
   useDerivedValue,
-  useSharedValue,
   withTiming,
 } from 'react-native-reanimated';
 
@@ -29,7 +27,7 @@ const SWITCH_TRACK_COLOR = {
 
 type Theme = 'light' | 'dark';
 
-const {height, width} = Dimensions.get('window');
+const {width} = Dimensions.get('window');
 
 const SIZE = 0.7 * width;
 const InterpolateColors = () => {
